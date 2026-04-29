@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark, .dark *));
+
+:root {
+  --background: #f0f1f3;
+  --foreground: #1c1c22;
+  --card: #ffffff;
+  --navbar: #ffffff;
+  --muted: #6b7280;
+  --primary: #fb923c;
+  --border: rgba(251, 146, 60, 0.1);
+  --glow: rgba(251, 146, 60, 0.5);
+}
+
+.dark {
+  --background: #1c1c22;
+  --foreground: #ededed;
+  --card: #23232a;
+  --navbar: #1c1c22;
+  --muted: #9ca3af;
+  --primary: #fb923c;
+  --border: rgba(251, 146, 60, 0.1);
+  --glow: rgba(251, 146, 60, 0.5);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-navbar: var(--navbar);
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-border: var(--border);
+  --background-image-primary-gradient: linear-gradient(
+    to right,
+    #f97316,
+    #ea580c
+  );
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-poppins);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+/* Thin scrollbar for Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 6px; /* vertical scrollbar width */
+  height: 6px; /* horizontal scrollbar height */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* or a light gray if you prefer */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f97316; /* Tailwind orange-500 hex */
+  border-radius: 10px; /* round edges */
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #f97316 transparent; /* thumb color / track color */
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 100s linear infinite;
+}
+@keyframes formMarquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-form-marquee {
+  animation: formMarquee 40s linear infinite; /* faster than skills bar */
+}
+
+/* Loader */
+.loader {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  height: 35px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(farthest-side, #f97316 95%, #0000) 50%/10px 10px no-repeat,
+    var(--eye-bg, #fff);
+  background-repeat: no-repeat;
+  animation: l10 1.5s infinite alternate;
+  border: 2px solid rgba(249, 115, 22, 0.2);
+}
+
+.loader:after {
+  --s: -1;
+}
+
+.dark .loader:before,
+.dark .loader:after {
+  --eye-bg: #fff;
+}
+
+.light .loader:before,
+.light .loader:after {
+  --eye-bg: #e5e7eb;
+}
+
+@keyframes l10 {
+  0%,
+  20% {
+    transform: scaleX(var(--s, 1)) rotate(0deg);
+    clip-path: inset(0);
+  }
+  60%,
+  100% {
+    transform: scaleX(var(--s, 1)) rotate(30deg);
+    clip-path: inset(40% 0 0);
+  }
+}
