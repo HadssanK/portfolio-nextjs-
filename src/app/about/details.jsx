@@ -84,7 +84,7 @@ const profileData = {
   role: "Full Stack Developer",
   location: "Pakistan",
   email: "hassantheDev945@gmail.com",
-  phone: "+92 3478784872",
+  phone: "+92 330 0273758",
   bio: "A passionate Full Stack Developer with hands-on experience in real-world projects, delivering scalable, efficient, and user-friendly applications across the web.",
 };
 
