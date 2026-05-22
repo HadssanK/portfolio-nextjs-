@@ -23,7 +23,7 @@ export default function Footer() {
 
   const socialLinks = [
       { icon: GithubIcon, label: "GitHub", href: "https://github.com/HadssanK" },
-  { icon: LinkedinIcon, label: "LinkedIn", href: "https://www.linkedin.com/in/muhammad-hassan-a47b67251/" },
+  { icon: LinkedinIcon, label: "LinkedIn", href: "https://www.linkedin.com/in/hassan-merndev/" },
   ];
 
   return (

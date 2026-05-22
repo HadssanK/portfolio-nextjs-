@@ -244,7 +244,7 @@ export default function ContactMe() {
               <div className="flex gap-3">
                 <SocialButton
                   icon={LinkedinIcon}
-                  href="https://www.linkedin.com/in/muhammad-hassan-a47b67251/"
+                  href="https://www.linkedin.com/in/hassan-merndev/"
                   label="LinkedIn"
                 />
                 <SocialButton

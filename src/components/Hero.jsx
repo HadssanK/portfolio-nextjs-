@@ -33,7 +33,7 @@ const LeetCodeIcon = ({ className }) => (
 
 const SOCIAL_LINKS = [
   { icon: GithubIcon, label: "GitHub", href: "https://github.com/HadssanK" },
-  { icon: LinkedinIcon, label: "LinkedIn", href: "https://www.linkedin.com/in/muhammad-hassan-a47b67251/" },
+  { icon: LinkedinIcon, label: "LinkedIn", href: "https://www.linkedin.com/in/hassan-merndev/" },
   { icon: Mail, label: "Gmail", href: "mailto:hassantheDev945@gmail.com" },
 ];
 
