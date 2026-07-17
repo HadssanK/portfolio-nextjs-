@@ -289,6 +289,51 @@ export const projects = [
   duration: "Completed",
   completedDate: "2026",
   liveUrl: "https://your-portfolio-link.com",
-}
+},
+{
+  id: "8",
+  title: "PropFind | Premium Real Estate Platform",
+  shortDescription:
+    "A role-based real estate management platform with dedicated dashboards for Admin, Agents, and Buyers, featuring property approval workflows and real-time analytics.",
+  fullDescription:
+    "PropFind is a production-ready real estate management platform built for the Pakistani property market. Developed using Next.js 16 with Turbopack and React 19, the application follows a modular, role-based architecture supporting three distinct user scopes: Buyer, Agent, and Administrator. I designed and built a complete admin console featuring real-time business intelligence dashboards, dynamic analytics charts, and a CSV export engine for reporting. The platform includes a full property inspection workflow with approve/reject actions and custom rejection reasons, along with user management tools for promoting, blocking, and removing accounts. On the agent side, I built a listing studio for creating and managing property records with image galleries and pricing configurations, plus a real-time client inquiry dashboard. The public-facing portal offers an advanced search system with multi-parameter filters and persistent wishlists. Route-level security is enforced through custom role guards, ensuring each user type only accesses its designated dashboard.",
+  category: "Real Estate Platform",
+  image: "/projects/propfind/prop1.png",
+  gallery: [
+    "/projects/propfind/propfind1.png",
+    "/projects/propfind/propfind2.png",
+    "/projects/propfind/propfind3.png",
+    "/projects/propfind/propfind4.png",
+    "/projects/propfind/propfind4.png",
+  ],
+  techStack: [
+    "Next.js 16 (Turbopack)",
+    "React 19",
+    "Tailwind CSS v4",
+    "Axios",
+    "Context API",
+  ],
+  features: [
+    "Role-based dashboard system for Buyer, Agent, and Admin users",
+    "Real-time admin analytics dashboard mapped directly from backend stats API",
+    "Dynamic charts showing user registration and property listing trends",
+    "One-click CSV export engine for administrative summaries and agent metrics",
+    "Property approval workflow with Approve/Reject actions and custom rejection reasons",
+    "Featured property toggle system for the public portal",
+    "User management panel to search, filter, promote, block, and delete accounts",
+    "Dynamic category manager with auto-rendering emoji icons",
+    "Agent workspace with real-time client inquiry notifications",
+    "Listing studio for adding and editing properties with image galleries",
+    "Agent profile settings with bio and profile picture management",
+    "Advanced public search bar with multi-parameter filters (price, location, type)",
+    "Persistent user wishlists for favorite properties",
+    "Role-based route guards for secure, protected dashboard access",
+    "Custom Axios API client with centralized error handling and token authorization",
+    "Skeleton loading states for a premium, high-performance user experience",
+  ],
+  duration: "Completed",
+  completedDate: "2026",
+  liveUrl: "https://realstatfrontend.vercel.app/",
+},
  
 ];
